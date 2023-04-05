@@ -5,7 +5,7 @@ metadata:
   labels:
     app: java-app
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: java-app
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: java-app
-          image: anildevops21/dockerdemov2
+          image: anildevops21/java-springboot-docker-k8s
           ports:
             - containerPort: 8080
 ---
